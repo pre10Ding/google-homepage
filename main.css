@@ -13,8 +13,7 @@ a:hover {
 .nav-bar {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -38,10 +37,97 @@ a:hover {
     color: rgba(90, 90, 90, 0.856);
     background-color: rgb(235, 235, 235);
     font-size: 15px;
+    margin-top: 50px;
 
+}
+
+@media (max-height:450px) {
+    #footer {
+        position: static;
+    }
 }
 
 .gray-bar {
     border-top: 1px solid rgba(90, 90, 90, 0.219);
     
+}
+
+#link-apps{
+    background-image: url('i1_1967ca6a.png');
+    background-size: 528px 68px;
+    width:30px;
+    display: inline-block;
+    height: 30px;
+    background-position: -132px -40px;
+    opacity: 50%;
+    vertical-align: middle
+}
+#link-apps:hover {
+    opacity: 100%;
+}
+
+#logo-img{
+    display:block;
+    margin: 130px auto 20px auto;
+    height:92px;
+    transition: all .3s ease;
+
+}
+
+@media (max-height:520px) {
+    #logo-img{
+        margin:0px auto 10px auto;
+        height: 65px;
+
+    }
+}
+
+
+#search-container {
+    display:grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    justify-items: center;
+    align-items: center
+    
+}
+
+
+#search-form {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 20px;
+}
+
+#search-input {
+    grid-column:1/4;
+}
+
+#search-google, #search-lucky {
+    width: fit-content;
+    padding-left: 13px;
+    padding-right: 13px;
+    height: 30px;
+    border: none;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+#search-google:hover, #search-lucky:hover {
+    border: 1px solid rgba(160, 160, 160, 0.274);
+    box-shadow: 0px 1px rgba(160, 160, 160, 0.151);
+}
+
+#search-google {
+    justify-self:right;
+}
+
+#search-lucky {
+    justify-self:left;
+}
+
+#also-french {
+    font-size: 13px;
+}
+#link-french {
+    color: blue;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <link rel="stylesheet" href="reset.css" type="text/css" />
     <link rel="stylesheet" href="main.css" type="text/css" />
@@ -29,18 +30,25 @@
         </div>
         <div id="search-container">
             <form id="search-form" action="www.google.com/search">
-                <input id="search-input" type="text" name="search-input">
+                <div id="search-line">
+                    <div id="search-wrapper">
+                        <div id="magnify"></div>
+                        <input id="search-field" type="search" name="search-input" autocomplete="off">
+                        <div id="break-bar">|</div>
+                        <div id="speech"></div>
+                    </div>
+                </div>
                 <input id="search-google" type="button" name="search-google" value="Google Search">
                 <input id="search-lucky" type="button" name="search-lucky" value="I'm Feeling Lucky">
             </form>
- 
-        <p id="also-french">Google offered in:
-            <a href="#" id="link-french">Français</a>
-        </p>
-    </div>
+
+            <p id="also-french">Google offered in:
+                <a href="#" id="link-french">Français</a>
+            </p>
+        </div>
     </div>
 
-    <div id="footer" >
+    <div id="footer">
         <div id="country" class="nav-bar gray-bar">
             <p>Canada</p>
         </div>

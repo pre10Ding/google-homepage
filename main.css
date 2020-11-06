@@ -149,6 +149,12 @@ a:hover {
     border: 1px solid #70707041;
     height: 43px;
     border-radius: 30px;
+    box-shadow: none;
+    transition: all .1s ease;
+}
+
+#search-line:hover{
+    box-shadow: 0px 1px 5px 1px #8888883a;
 }
 
 #search-wrapper {
@@ -157,6 +163,7 @@ a:hover {
     height: 100%;
     align-items: center;
     justify-items: center;
+    
 }
 
 #magnify {
